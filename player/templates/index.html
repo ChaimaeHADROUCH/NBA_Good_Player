@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <h1>Home page</h1>
+
+  
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(230, 239, 245);
+    }
+  </style>
+</head>
+
+
+<body class="center">
+  
+  <h1 style="color:rgb(44, 44, 90); font-weight: 700;">
+    <i class="fas fa-ship"></i> Good NbaPlayer Predictor
+  </h1>
+
+  <span style="color:rgb(51, 51, 83); font-weight: 700;">
+    Should we invest in the player with your given characteristics ?
+  </span>
+  
+
+  <form action="result">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Games Played" required type="text" name="GP">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Minutes Played" required type="text" name="MIN">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Points PerGame" required type="text" name="PTS">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Field GoalsMade" required type="text" name="FGM">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Field GoalAttempts" type="text" required name="FGA">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Field Goal Percent" required type="text" name="FGpercent">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="3 Point Made" required type="text" name="threePMade">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="3 Point Attempts" required type="text" name="threePA">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="3 Points Percent" required type="text" name="threePpercent">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Free Throw Made" required type="text" name="FTM">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Free Throw Attempts" required type="text" name="FTA">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Free Throw Percent" required type="text" name="FTpercent">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Offensive Rebounds" required type="text" name="OREB">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Defensive Rebounds" required type="text" name="DREB">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Rebounds" required type="text" name="REB">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Assists" required type="text" name="AST">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Steals" required type="text" name="STL">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Blocks" required type="text" name="BLK">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Turnovers" required type="text" name="TOV">
+    </div>
+
+    
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+
+    
+    
+  </form>
+  
+</body>
+
+</html>
