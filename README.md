@@ -5,7 +5,7 @@ Conseiller des investisseurs cherchant à capitaliser sur de futurs talents de l
 
 # Screenshots
 
-![image](https://drive.google.com/uc?export=view&id=1GxIgfHu0skJGqx5BpisKQZqF5qaWcxjg)
+![image](https://drive.google.com/uc?export=view&id=1qlCqYreKC2KMJdW-O82myf3cYwPGko9E)
 
 # Install environment
 ```python
